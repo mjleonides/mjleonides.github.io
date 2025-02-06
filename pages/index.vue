@@ -9,7 +9,7 @@
 						width="200"
 						src="~/assets/images/avi.jpeg"
 						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite gorgeous." />
-					<h1>Howdy! My name is Mike.</h1>
+					<h1>Howdy, my name is Mike.</h1>
 					<p>
 						I am passionate about creating a fully accessible and resilient web
 						for all, and I support an ethical and respectful implementation of
@@ -17,9 +17,7 @@
 					</p>
 					<div class="actions-container">
 						<div>
-							<a href="mailto:contact@leonides.dev">
-								Click here to contact me.
-							</a>
+							<a :href="mailUrl">Click here to contact me.</a>
 						</div>
 						<ResumeNotice v-if="!resumeLoading" />
 					</div>
@@ -36,6 +34,8 @@ import useGetResumeData from "@/assets/queries/useGetResumeData";
 
 const entries = ref();
 const resumeLoading = ref(true);
+
+const mailUrl = "mailto:contact@leonides.dev";
 
 onMounted(async () => {
 	//have to use async await on the useGetResume composable or else it tries to set values before the api call is done
