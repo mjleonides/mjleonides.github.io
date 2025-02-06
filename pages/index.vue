@@ -8,21 +8,20 @@
 						class="avi"
 						width="200"
 						src="~/assets/images/avi.jpeg"
-						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite gorgeous."
-					/>
-					<h1>Howdy! My name is Mike, and I build stuff for the web.</h1>
+						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite gorgeous." />
+					<h1>Howdy! My name is Mike.</h1>
 					<p>
 						I am passionate about creating a fully accessible and resilient web
 						for all, and I support an ethical and respectful implementation of
 						technology for the common good.
 					</p>
 					<div class="actions-container">
-							<div>
-								<a href="mailto:contact@leonides.dev"
-									>Click here to contact me.</a
-								>
-							</div>
-						<ResumeNotice v-if="!resumeLoading"/>
+						<div>
+							<a href="mailto:contact@leonides.dev">
+								Click here to contact me.
+							</a>
+						</div>
+						<ResumeNotice v-if="!resumeLoading" />
 					</div>
 				</div>
 			</div>
