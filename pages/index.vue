@@ -9,18 +9,19 @@
 						width="200"
 						src="~/assets/images/avi.jpeg"
 						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite gorgeous." />
-					<h1>Howdy, my name is Mike.</h1>
+					<h1>My name is Mike.</h1>
 					<p>
-						I am passionate about creating a fully accessible and resilient web
-						for all, and I support an ethical and respectful implementation of
-						technology for the common good.
+						I like to build things that make my life easier, hopefully they can
+						help you too.
 					</p>
-					<div class="actions-container">
-						<div>
-							<a :href="mailUrl">Click here to contact me.</a>
-						</div>
-						<ResumeNotice v-if="!resumeLoading" />
-					</div>
+					<p>
+						<a href="mailto:contact@leonides.dev">Click here to contact me.</a>
+						Check out some of my web-based tools at
+						<a href="https://leonides.dev/font-sizer" target="_blank">Font Sizer</a>
+						and
+						<a href="https://leonides.dev/unit-pricer" target="_blank">Unit Pricer</a>.
+					</p>
+					<ResumeNotice v-if="!resumeLoading" />
 				</div>
 			</div>
 
@@ -71,10 +72,6 @@ h1 {
 	display: inline-flex;
 	align-items: center;
 	gap: 1ch;
-
-	// a {
-	// 	margin-right: 1ch;
-	// }
 
 	@media (max-width: 500px) {
 		flex-direction: column;
