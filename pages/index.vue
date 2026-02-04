@@ -36,6 +36,8 @@ import useGetResumeData from "@/assets/queries/useGetResumeData";
 const entries = ref();
 const resumeLoading = ref(true);
 
+const mailUrl = "mailto:contact@leonides.dev";
+
 onMounted(async () => {
 	//have to use async await on the useGetResume composable or else it tries to set values before the api call is done
 	// get events from mock db when component is created
