@@ -1,10 +1,22 @@
 {
 	"entries": [
 		{
-			"date": "present",
+			"date": "2025 - present",
 			"title": "Front-End Developer, Associate",
 			"subtitle": "K2United, LLC",
-			"location": "College Station, TX"
+			"location": "Remote - College Station, TX"
+		},
+		{
+			"date": "2023 - present",
+			"title": "Co-Owner",
+			"subtitle": "The Delight Media Co.",
+			"location": "tyler, TX"
+		},
+		{
+			"date": "2023 - 2025",
+			"title": "Front-End Developer, Associate",
+			"subtitle": "K2United, LLC",
+			"location": "Remote - College Station, TX"
 		},
 		{
 			"date": "2022-2023",
@@ -13,15 +25,10 @@
 			"location": "College Station, TX"
 		},
 		{
-			"date": "present",
-			"title": "Web Developer",
-			"subtitle": "The Delight Media Co."
-		},
-		{
 			"date": "2021 - 2022",
 			"title": "Technical Support Engineer",
 			"subtitle": "Instructure, Inc.",
-			"location": "Salt Lake City, UT",
+			"location": "Remote - Salt Lake City, UT",
 			"work": [
 				"Provided real-time technical support to end users and administrators of top cloud-based Learning Management System",
 				"Fixed end-user interface issues via live contact and replicated/troubleshot bugs",
@@ -51,14 +58,18 @@
 		{
 			"title": "Things I Know",
 			"work": [
-				"Technical Writing",
-				"MS Office",
 				"Web Development",
-				"HTML5",
-				"CSS3",
+				"JavaScript",
+				"TypeScript",
+				"Vue",
 				"Sass",
+				"HTML",
+				"CSS",
 				"Git",
-				"Postman"
+				"CI/CD",
+				"Agile",
+				"MS Office",
+				"Technical Writing"
 			]
 		}
 	]
