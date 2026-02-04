@@ -8,18 +8,23 @@
 						class="avi"
 						width="200"
 						src="~/assets/images/avi.jpeg"
-						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite gorgeous." />
-					<h1>My name is Mike.</h1>
-					<p>
-						I like to build things that make my life easier, hopefully they can
-						help you too.
-					</p>
+						alt="Head shot of Mike Leonides smiling in front of greenery. He is quite attractive." />
+					<h1>
+						I'm Mike, and I like to build things that make my life easier.
+						Hopefully, they can help you too.
+					</h1>
 					<p>
 						<a href="mailto:contact@leonides.dev">Click here to contact me.</a>
 						Check out some of my web-based tools at
-						<a href="https://leonides.dev/font-sizer" target="_blank">Font Sizer</a>
-						and
-						<a href="https://leonides.dev/unit-pricer" target="_blank">Unit Pricer</a>.
+						<a href="https://leonides.dev/font-sizer" target="_blank"
+							>Font Sizer</a
+						>,
+						<a href="https://leonides.dev/unit-pricer" target="_blank"
+							>Unit Pricer</a
+						>, and
+						<a href="https://leonides.dev/verse-typer" target="_blank"
+							>Verse Typer</a
+						>.
 					</p>
 					<ResumeNotice v-if="!resumeLoading" />
 				</div>
@@ -28,6 +33,12 @@
 			<EntryList v-if="entries" :entries="entries" />
 		</div>
 	</div>
+
+	<footer>
+		<p>
+			Crafted by <a href="https://leonides.dev" target="_blank">leonides.dev</a>
+		</p>
+	</footer>
 </template>
 
 <script setup lang="ts">
@@ -64,8 +75,8 @@ onMounted(async () => {
 }
 
 h1 {
-	font-size: calc(1rem + 0.5vw);
-	margin: 1rem 0;
+	margin-top: 1rem;
+	font-size: 1.5rem;
 }
 
 .actions-container {
@@ -81,5 +92,13 @@ h1 {
 
 .avi {
 	max-width: 40vw;
+	border-radius: 8px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.75rem;
 }
 </style>

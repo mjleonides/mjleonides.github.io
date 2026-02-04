@@ -4,20 +4,17 @@
 			class="fa-solid fa-circle-half-stroke"
 			@click="themeToggle"
 			role="button"
-			aria-label="Button toggle to switch between light and dark theme"
-		></button>
+			aria-label="Button toggle to switch between light and dark theme"></button>
 		<a
 			href="https://github.com/mjleonides"
 			role="link"
 			aria-label="Link to Michael's profile on Github"
-			class="fa-brands fa-github"
-		></a
+			class="fa-brands fa-github"></a
 		><a
 			href="https://linkedin.com/in/mjleonides"
 			role="link"
 			aria-label="Link to Michael's profile on Linkedin"
-			class="fa-brands fa-linkedin"
-		></a>
+			class="fa-brands fa-linkedin"></a>
 	</div>
 </template>
 
@@ -25,7 +22,7 @@
 const themeToggle = () => {
 	let root = getComputedStyle(document.documentElement);
 	let theme = document.documentElement.style;
-	if (root.getPropertyValue("--theme-bg-color") === "#1f1f1f") {
+	if (root.getPropertyValue("--theme-bg-color") === "#0a0a0a") {
 		theme.setProperty("--theme-bg-color", "var(--light)");
 		theme.setProperty("--theme-color", "var(--dark)");
 	} else {
@@ -41,6 +38,10 @@ const themeToggle = () => {
 	flex-direction: row-reverse;
 }
 
+a {
+	border: none;
+}
+
 a,
 button {
 	padding: 0 0.5rem;
@@ -52,6 +53,7 @@ button {
 	&:hover,
 	&:focus {
 		opacity: 1;
+		color: var(--amber);
 	}
 }
 

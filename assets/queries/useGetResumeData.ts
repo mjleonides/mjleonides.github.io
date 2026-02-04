@@ -8,9 +8,7 @@ const getResumeData = async () => {
 	const isLoading = ref(true);
 
 	await axios
-		.get(
-			"https://my-json-server.typicode.com/mjleonides/mjleonides.github.io/entries"
-		)
+		.get("https://my-json-server.typicode.com/mjleonides/webresume/entries")
 		.then((response) => {
 			data.value = response.data;
 			isLoading.value = false;

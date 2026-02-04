@@ -15,15 +15,21 @@ const mySingleEntry = ref();
 
 const myHeight = computed(() => {
 	if (mySingleEntry.value.previousSibling.className === "exp-item") {
-		return (mySingleEntry.value.offsetTop + mySingleEntry.value.previousSibling.offsetHeight - 96)
+		return (
+			mySingleEntry.value.offsetTop +
+			mySingleEntry.value.previousSibling.offsetHeight -
+			96
+		);
 	} else {
-		return (mySingleEntry.value.offsetTop + mySingleEntry.value.offsetHeight - 96)
+		return (
+			mySingleEntry.value.offsetTop + mySingleEntry.value.offsetHeight - 96
+		);
 	}
-})
+});
 
 const handleTop = () => {
-	myTop.value =  window.scrollY <= (myHeight.value) ? 0 : (myHeight.value - window.scrollY);
-
+	myTop.value =
+		window.scrollY <= myHeight.value ? 0 : myHeight.value - window.scrollY;
 };
 
 onMounted(() => {
@@ -37,11 +43,11 @@ div.exp-item {
 		margin: 0;
 	}
 	h2 {
-		font-size: calc(1.5rem + 0.5vw);
+		font-size: 2rem;
 	}
 
 	p.subtitle {
-		font-size: calc(1rem + 0.25vw);
+		font-size: 1.25rem;
 	}
 
 	p.date {
