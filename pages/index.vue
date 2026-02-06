@@ -79,6 +79,11 @@ h1 {
 	font-size: 1.5rem;
 }
 
+h1,
+p {
+	line-height: 2rem;
+}
+
 .actions-container {
 	display: inline-flex;
 	align-items: center;
@@ -100,5 +105,6 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	font-size: 0.75rem;
+	margin-top: 5rem;
 }
 </style>
